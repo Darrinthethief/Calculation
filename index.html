@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
     <script src="https://kit.fontawesome.com/9c98ae8183.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,30 +17,29 @@
     <main class="main">
         <div class="calculate-top">
             <div class="calculator-screen">
-                <div class="screen">0</div>
+                <div class="screen"></div>
             </div>
             <div class="calculator calculator-border">
                 <span class="calculator-button">
-                    <button class="clear-key">AC</button>
-                    <button class="clear">C</button>
-                    <button class="percent">%</button>
-                    <button class="divide operator"><i class="fa-solid fa-divide"></i></button>
+                    <button class="clear-key" value="clear">AC</button>
+                    <button class="percent" value="%">%</button>
+                    <button class="divide operator" value="/"><i class="fa-solid fa-divide"></i></button>
                 </span>
             </div>
             <div class="calculator-border">
                 <span class="calculator-button">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button class="multiply operator"><i class="fa-solid fa-xmark"></i></button>
+                    <button value="7">7</button>
+                    <button value="8">8</button>
+                    <button value="9">9</button>
+                    <button class="multiply operator" value="x"><i class="fa-solid fa-xmark"></i></button>
                 </span>
             </div>
             <div class="calculator-border">
                 <span class="calculator-button">
-                    <button>4</button>
-                    <button>5</button>
+                    <button value="4">4</button>
+                    <button value="5">5</button>
                     <button value="6">6</button>
-                    <button class="subtract operator">-</button>
+                    <button class="subtract operator" value="-">-</button>
                 </span>
             </div>
             <div class="calculator-border">
@@ -48,14 +47,14 @@
                     <button value="1">1</button>
                     <button value="2">2</button>
                     <button value="3">3</button>
-                    <button class="addition operator">+</button>
+                    <button class="addition operator" value="+">+</button>
                 </span>
             </div>
             <div class="calculator-border">
                 <span class="calculator-button">
                     <button value="0">0</button>
-                    <button>.</button>
-                    <button class="equal-button equal">=</button>
+                    <button value="decimal">.</button>
+                    <button class="equal-button equal" value="=">=</button>
                 </span>
             </div>
         </div>

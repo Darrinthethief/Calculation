@@ -23,7 +23,9 @@ header {
 /* h1 font-size  */
 
 h1 {
-    font-size: 40px;
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
 
 /* Main Section */
@@ -38,11 +40,12 @@ h1 {
 /* Top of the Calculator */
 
 .calculate-top {
-    border: 2px solid #FFF;
+    border: 5px solid #9F9D9D;
     height: auto;
-    max-width: 26%;
+    width: 400px;
     padding: 10px;
     border-radius: 10px;
+    background-color: #000000;
 }
 
 .calculator-border {
@@ -55,8 +58,10 @@ h1 {
 }
 
 .screen {
+    background-color: #FFFFFF;
+    color: #000000;
     display: flex;
-    border: 2px solid #FFF;
+    border: 5px solid #9F9D9D;
     height: 75px;
     border-radius: 8px;
     font-size: 50px;
@@ -94,14 +99,15 @@ button:hover {
 .clear-key {
     background-color: #2b7df1;
     color: #e9e7e7;
+    width: 160px;
 }
 
 .operator {
     background-color: #e9710f;
 }
 
-.equal, .clear, .percent {
-    background-color: #9f9d9d;
+.equal, .percent {
+    background-color: #9F9D9D;
 }
 
 .equal-button {
