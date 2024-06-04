@@ -14,48 +14,44 @@
     <header>
         <h1>Calculator</h1>
     </header>
-    <main class="main">
-        <div class="calculate-top">
-            <div class="calculator-screen">
-                <div class="screen"></div>
+    <main>
+        <div id="calculator-container">
+            <div class="screen">
+                <div class="screen-display">0</div>
             </div>
-            <div class="calculator calculator-border">
-                <span class="calculator-button">
-                    <button class="clear-key" value="clear">AC</button>
-                    <button class="percent" value="%">%</button>
-                    <button class="divide operator" value="/"><i class="fa-solid fa-divide"></i></button>
-                </span>
-            </div>
-            <div class="calculator-border">
-                <span class="calculator-button">
-                    <button value="7">7</button>
-                    <button value="8">8</button>
-                    <button value="9">9</button>
-                    <button class="multiply operator" value="x"><i class="fa-solid fa-xmark"></i></button>
-                </span>
-            </div>
-            <div class="calculator-border">
-                <span class="calculator-button">
-                    <button value="4">4</button>
-                    <button value="5">5</button>
-                    <button value="6">6</button>
-                    <button class="subtract operator" value="-">-</button>
-                </span>
-            </div>
-            <div class="calculator-border">
-                <span class="calculator-button">
-                    <button value="1">1</button>
-                    <button value="2">2</button>
-                    <button value="3">3</button>
-                    <button class="addition operator" value="+">+</button>
-                </span>
-            </div>
-            <div class="calculator-border">
-                <span class="calculator-button">
-                    <button value="0">0</button>
-                    <button value="decimal">.</button>
-                    <button class="equal-button equal" value="=">=</button>
-                </span>
+            <div class="calculator-buttons">
+                <div class="calculator-grid">
+                    <button type="button" id="clear">AC</button>
+                    <button type="button" id="delete">C</button>
+                    <button type="button" id="percent">%</button>
+                    <button type="button" class="operator">/</button>
+
+                </div>
+                <div class="calculator-grid">
+                    <button type="button" class="numbers">7</button>
+                    <button type="button" class="numbers">8</button>
+                    <button type="button" class="numbers">9</button>
+                    <button type="button" class="operator">x</button>
+
+                </div>
+                <div class="calculator-grid">
+                    <button type="button" class="numbers">4</button>
+                    <button type="button" class="numbers">5</button>
+                    <button type="button" class="numbers">6</button>
+                    <button type="button" class="operator">-</button>
+
+                </div>
+                <div class="calculator-grid">
+                    <button type="button" class="numbers">3</button>
+                    <button type="button" class="numbers">2</button>
+                    <button type="button" class="numbers">1</button>
+                    <button type="button" class="operator">+</button>
+                </div>
+                <div class="calculator-grid">
+                    <button type="button" class="numbers">0</button>
+                    <button type="button" class="numbers">.</button>
+                    <button type="button" id="equal">=</button>
+                </div>
             </div>
         </div>
     </main>
