@@ -1,23 +1,20 @@
-function add(firstNumber, secondNumber) {
+const add = (firstNumber, secondNumber) => {
     return firstNumber + secondNumber;
 }
 
-function subtract(firstNumber, secondNumber) {
+const subtract = (firstNumber, secondNumber) => {
     return firstNumber - secondNumber;
 }
 
-function multiply(firstNumber, secondNumber) {
+const multiply = (firstNumber, secondNumber) => {
     return firstNumber * secondNumber;
 }
 
-function divide(firstNumber, secondNumber) {
-    if (secondNumber === 0) {
-        return "Error: Division by Zero"
-    }
+const divide = (firstNumber, secondNumber) => {
     return firstNumber / secondNumber;
 }
 
-function operator(operand, firstNumber, secondNumber) {
+const operator = (operand, firstNumber, secondNumber) => {
 
     switch(operand) {
         case '+':
@@ -28,38 +25,29 @@ function operator(operand, firstNumber, secondNumber) {
             return multiply(firstNumber, secondNumber);
         case '/':
             return divide(firstNumber, secondNumber);
+        default:
+            return null;
     }
 }
 
 const displayScreen = document.querySelector('.screen-display');
-const clearButton = document.querySelector('#clear');
-const deleteButton = document.querySelector("#delete");
-const percentButton = document.querySelector("#percent");
-const numberButtons = document.querySelectorAll('.numbers');
-const operatorButtons = document.querySelectorAll('.operator');
-const equalButton = document.querySelector('#equal');
+const buttonCalculator = document.querySelector('.calculator-buttons');
 
-let firstNumber = null;
-let secondNumber = null;
-let currentOperator = null;
+let firstNumber = '';
+let secondNumber = '';
+let currentOperator = '';
 let displayValue = '';
 
-function clearDisplay() {
-    firstNumber = null;
-    secondNumber = null;
-    currentOperator = null;
-    displayValue = '';
-    displayScreen.textContent = "0";
-    return;
-}
+const populateDisplay = () => {
+    buttonCalculator.addEventListener('click', (e) => {
+        const currentValue = e.target.value;
+        const currentOperator = e.target.innerText;
 
-clearButton.addEventListener('click', clearDisplay);
-
-function populateDisplay() {
-    numberButtons.forEach((button) => {
-        button.addEventListener('click', (e) => {
-           console.log(e.target.textContent);
-        });
+        if (currentValue) {
+            displayValue += currentValue;
+            firstNumber = displayValue;
+            displayScreen.textContent = firstNumber;
+        }
     });
 }
 
