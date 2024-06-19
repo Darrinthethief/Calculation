@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: #bababa;
 }
 
 /* Header Section */
@@ -22,8 +23,8 @@ header {
 }
 
 h1 {
-    font-size: 44px;
-    font-weight: 500;
+    font-size: 3.5rem;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -43,6 +44,7 @@ main {
     max-width: 500px;
     padding: 10px;
     flex: 1 1 0;
+    background-color: #000;
 }
 
 .calculator-grid {
@@ -63,6 +65,7 @@ main {
     padding: 0;
     padding-right: 10px;
     overflow: hidden;
+    background-color: #EEE;
 }
 
 /* Calculator container top spacing */
@@ -79,17 +82,28 @@ button {
     justify-content: center;
     border-radius: auto;
     flex-direction: column;
-    font-size: 20px;
-    font-weight: 550;
+    font-size: 1.4rem;
+    font-weight: 500;
     height: 50px;
     width: 70px;
     gap: 10px;
     margin-bottom: 10px;
     padding: 20px;
+    background-color: #B5B4B3;
+    color: #FFF;
+    border-radius: .5rem;
 }
 
 #equals {
     height: 50px;
     width: 150px;
+}
+
+#clear, #delete, #percent {
+    background-color: #545353;
+}
+
+.operator {
+    background-color: #F19029;
 }
 
